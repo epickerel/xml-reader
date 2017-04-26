@@ -1,7 +1,7 @@
 'use strict';
 
 const EventEmitter = require('eventemitter3');
-const Lexer = require('xml-lexer');
+const Lexer = require('xml-lexer-datatest');
 const Type = Lexer.Type;
 
 const NodeType = {
@@ -98,7 +98,13 @@ const create = (options) => {
     };
 
     reader.reset = () => {
-        lexer = Lexer.create({debug: options.debug});
+        var lexerOptions = {
+            debug: options.debug
+        };
+        if (options.dataEmitTest) {
+            lexerOptions.dataEmitTest = options.dataEmitTest;
+        }
+        lexer = Lexer.create(lexerOptions);
         lexer.on('data', handleLexerData);
         rootNode = createNode();
         current = null;

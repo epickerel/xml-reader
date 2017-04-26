@@ -1,5 +1,5 @@
 {
-  "name": "xml-reader",
+  "name": "xml-reader-datatest",
   "version": "2.4.3",
   "description": "XML Reader and Parser",
   "main": "dist/reader.js",
@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "eventemitter3": "^2.0.0",
-    "xml-lexer": "^0.2.2"
+    "xml-lexer-datatest": "^0.0.1"
   },
   "devDependencies": {
     "ava": "^0.16.0",
@@ -42,10 +42,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pladaria/xml-reader.git"
+    "url": "git+https://github.com/epickerel/xml-reader.git"
   },
   "bugs": {
-    "url": "https://github.com/pladaria/xml-reader/issues"
+    "url": "https://github.com/epickerel/xml-reader/issues"
   },
-  "homepage": "https://github.com/pladaria/xml-reader#readme"
+  "homepage": "https://github.com/epickerel/xml-reader#readme"
 }
